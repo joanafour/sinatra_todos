@@ -1,4 +1,5 @@
 require "sinatra"
+<<<<<<< HEAD
 require "sinatra/reloader" if development? 
 require "tilt/erubi"
 require "sinatra/content_for"
@@ -195,3 +196,11 @@ end
 
 # All of the todo items are completed
 # It has one todo item
+=======
+require "sinatra/reloader"
+require "tilt/erubi"
+
+get "/" do
+  erb "You have no lists.", layout: :layout
+end
+>>>>>>> f85f18fbf5f2b9228093b9e537b027bfdb5853cc
